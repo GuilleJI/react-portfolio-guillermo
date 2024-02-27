@@ -5,11 +5,12 @@ import './App.css'
 
 function App() {
   return <>
-  <h1 className="text-3xl font-bold text-primary">
+  <h1 className="text-3xl font-bold text-primary font-roboto">
       Hello world!
     </h1>
     {/* our color setup is done */}
     {/* npw setup fonts */}
+    {/* so our font and color is now set up */}
   </>;
 }
 
