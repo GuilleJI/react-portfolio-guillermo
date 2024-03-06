@@ -1,4 +1,4 @@
-import bannerImg from '../images/Car.jpg'
+import bannerImg from '../images/Abstract.avif'
 
 const Home = () => {
     return (
