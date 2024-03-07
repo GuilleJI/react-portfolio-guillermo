@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   return <>
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <About />
       <Portfolio />
+      <Contact />
   </>;
 }
 //10:17
