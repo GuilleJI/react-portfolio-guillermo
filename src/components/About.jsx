@@ -1,4 +1,5 @@
 import profilePic from '../images/Thinking.jpg'
+import {Link} from 'react-scroll';
 
 const About = () => {
     return (
@@ -20,7 +21,16 @@ const About = () => {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere hic iste voluptatibus illo deleniti.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere hic iste voluptatibus illo deleniti.
                     </p>
-                    <button className='btn-primary'>Contact Me</button>
+                    <Link
+                        to="contact"
+                        spy={true}
+                        activeClass="active"
+                        smooth={true} 
+                        offset={-100}                   
+                    >
+                        <button className='btn-primary'>Contact Me</button>
+                    </Link>
+                    
                 </div>
             </div>
         </div>

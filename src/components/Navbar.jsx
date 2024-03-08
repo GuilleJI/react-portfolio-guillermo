@@ -43,7 +43,14 @@ const Navbar = () => {
                 <div className="flex item-center justify-between">
                     {/* for logo */}
                     <div className="cursor-pointer">
-                        <img src={logo} alt="" className="h-10"/>
+                        <Link
+                            to="home"
+                            activeClass="active"
+                            smooth={true}
+                            offset={-100} 
+                        >
+                            <img src={logo} alt="" className="h-10"/>
+                        </Link>                        
                     </div>
                     {/* menu items for large devices */}
                     <div className="lg:flex items-center gap-3 hidden text-body text-lg">
@@ -91,7 +98,15 @@ const Navbar = () => {
 
                     {/* contact me button */}
                     <div className="lg:block hidden">
-                        <button className="outlineBtn">Contact Me</button>
+                        <Link
+                            to="contact"
+                            spy={true}
+                            activeClass="active"
+                            smooth={true} 
+                            offset={-100}
+                        >
+                            <button className="outlineBtn">Contact Me</button>
+                        </Link>
                     </div>
                     {/* menubtn for mobile devices */}
                     <button onClick={toogleMenu} className="lg:hidden text-body text-3xl">
