@@ -71,8 +71,19 @@ const Footer = () => {
                 </div>
                 {/* social icons */}
                 <div className='flex items-center gap-4'>
-                    <FaLinkedin className='cursor-pointer hover:-translate-y-3 transition-all dur text-xl hover:text-primary'/>
-                    <FaGithub   className='cursor-pointer hover:-translate-y-3 transition-all dur text-xl hover:text-primary'/>
+                    <a
+                        href="https://www.linkedin.com/in/guillermo-jimenez-iriarte/"
+                        target="_blank"
+                    >
+                        <FaLinkedin className='cursor-pointer hover:-translate-y-3 transition-all dur text-xl hover:text-primary'/>
+                    </a>
+                    <a
+                        href="https://github.com/GuilleJI"
+                        target='_blank'
+                    >
+                        <FaGithub   className='cursor-pointer hover:-translate-y-3 transition-all dur text-xl hover:text-primary'/>
+                    </a>
+                    
                 </div>
             </div>
             <hr />
