@@ -12,7 +12,7 @@ const Home = () => {
           <div className="md:w-1/2 w-full mt-5">
               <h3 className="text-xl text-headingColor font-semibold mb-5">Hey, I'm Guillermo</h3>
               <h1 className="md:text-6xl text-4xl font-bold text-headingColor leading-snug md:leading-[76px] mb-5">I'm an <span className="text-primary">IT Programming Student </span> at NSCC</h1>
-              <p className="text-body text-2xl leading-9 mb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, nihil!</p>
+              <p className="text-body text-2xl leading-9 mb-8">Welcome to my website portfolio!</p>
               <Link
                   to="contact"
                   spy={true}
