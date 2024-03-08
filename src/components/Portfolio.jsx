@@ -9,7 +9,7 @@ const Portfolio = () => {
 
 
     return (
-        <div className='lg:mx-12 mx-4 my-32'>
+        <div className='lg:mx-12 mx-4 my-32' id='portfolio'>
             <div className='text-headingColor mb-20'>
                 <p className='text-xl font-semibold mb-5'>Recent Projects</p>
                 <h2 className='md:text-5xl text-4xl font-bold'>My Portfolio</h2>

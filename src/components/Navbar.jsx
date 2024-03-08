@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import {Link} from 'react-scroll';
 
 // import logo
 import logo from '../images/logo portfolio.png'
@@ -45,15 +46,47 @@ const Navbar = () => {
                         <img src={logo} alt="" className="h-10"/>
                     </div>
                     {/* menu items for large devices */}
-                    <div className="lg:flex items-center gap-10 hidden text-body text-lg">
-                        <a href="/" className="block py-2 px-4 cursor-pointer text-primary 
-                        hover:text-gray-400">Home</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">Skills</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">About Me</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">Portfolio</a>    
+                    <div className="lg:flex items-center gap-3 hidden text-body text-lg">
+                        <Link 
+                            to="home" 
+                            spy={true} 
+                            activeClass="active" 
+                            smooth={true} 
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400"
+                        >
+                            Home                            
+                        </Link>
+                        <Link 
+                            to="skills" 
+                            spy={true} 
+                            activeClass="active" 
+                            smooth={true} 
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            Skills
+                        </Link>
+                        <Link 
+                            to="about" 
+                            spy={true} 
+                            activeClass="active" 
+                            smooth={true} 
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            About Me
+                        </Link>
+                        <Link 
+                            to="portfolio" 
+                            spy={true} 
+                            activeClass="active" 
+                            smooth={true} 
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            Portfolio
+                        </Link>    
                     </div>
 
                     {/* contact me button */}
@@ -74,16 +107,49 @@ const Navbar = () => {
                   then render the <div>...</div>, otherwise render nothing”. */}
                 
                 {
-                    isMenuOpen && <div className="mt-4 p-4 bg-body rounded-lg text-white lg:hidden">
-                        <a href="/" className="block py-2 px-4 cursor-pointer text-primary 
-                        hover:text-gray-400">Home</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">Skills</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">About Me</a>
-                        <a href="/" className="block py-2 px-4 cursor-pointer  
-                        hover:text-gray-400">Portfolio</a>
-                    </div>
+                    isMenuOpen && (
+                    <div className="mt-4 p-4 bg-body rounded-lg text-white lg:hidden">
+                        <Link 
+                            to="home"
+                            spy={true}
+                            activeClass="active"
+                            smooth={true}
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400"
+                        >
+                            Home
+                        </Link>
+                        <Link 
+                            to="skills"
+                            spy={true} 
+                            activeClass="active"
+                            smooth={true}
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer  hover:text-gray-400"
+                        >
+                            Skills
+                        </Link>
+                        <Link 
+                            to="about"
+                            spy={true}
+                            activeClass="active"
+                            smooth={true}
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            About Me
+                        </Link>
+                        <Link 
+                            to="portfolio"
+                            spy={true} 
+                            activeClass="active"
+                            smooth={true}
+                            offset={-100}
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            Portfolio
+                        </Link>
+                    </div>)
                 }
             </nav>
         </header>
