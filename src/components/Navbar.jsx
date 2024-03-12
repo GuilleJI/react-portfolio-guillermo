@@ -44,7 +44,7 @@ const Navbar = () => {
                     {/* for logo */}
                     <div className="cursor-pointer">
                         <Link
-                            to="home"
+                            to="footer"
                             activeClass="active"
                             smooth={true}
                             offset={-100} 

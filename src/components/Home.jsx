@@ -11,19 +11,22 @@ const Home = () => {
 
           <div className="md:w-1/2 w-full mt-5">
               <h3 className="text-xl text-headingColor font-semibold mb-5">Hey, I'm Guillermo</h3>
-              <h1 className="md:text-6xl text-4xl font-bold text-headingColor leading-snug md:leading-[76px] mb-5">I'm an <span className="text-primary">IT Programming Student </span> at NSCC</h1>
-              <p className="text-body text-2xl leading-9 mb-8">Welcome to my website portfolio!</p>
+              <h1 className="md:text-6xl text-4xl font-bold text-headingColor leading-snug md:leading-[76px] mb-5">I'm a Second Year <span className="text-primary">IT Programming Student </span> at NSCC</h1>
+              <p className="text-body text-2xl leading-9 mb-8">Currently aspiring to <span className="text-primary"><strong>pursue</strong></span> Web Development with a <span className="text-primary"><strong>background </strong></span>in front-end and back-end development. I am pleased to welcome you to my website portfolio!</p>
               <Link
-                  to="contact"
+                  to="about"
                   spy={true}
                   activeClass="active"
                   smooth={true}
                   offset={-100}
               >
-                <button className="btn-primary">Get In Touch</button>
+                <button className="btn-primary">Let's get started!</button>
               </Link>             
           </div>            
         </div>
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
 };

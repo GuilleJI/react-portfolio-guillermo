@@ -5,7 +5,7 @@ import {FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <div className="bg-bgShade py-28 md:px-12 px-4">
+        <div className="bg-bgShade py-28 md:px-12 px-4" id="footer">
             <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-8 mb-20 cursor-pointer'>
                 <Link
                     to="home"
