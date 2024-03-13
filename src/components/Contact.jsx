@@ -1,19 +1,55 @@
+import React, { useState, useRef } from 'react';
+//import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser';
 
+export const Contact = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [stateMessage, setStateMessage] = useState(null); 
 
-const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.persist();
+    e.preventDefault();
+    setIsSubmitting(true);  
+
+    emailjs
+        .sendForm('service_bg8ulkh', 'template_1u4urlq', form.current, {
+            publicKey: 'KL6Puj5VMU4rNBrKB',
+        })
+        .then(
+            (result) => {
+                setStateMessage('Message sent!'); 
+                setIsSubmitting(false);
+                setTimeout(() => {
+                    setStateMessage(null);
+                }, 8000); //hide message after 8 seconds
+            },
+            (error) => {
+                setStateMessage('Something went wrong, please try again later');
+                setIsSubmitting(false); 
+                setTimeout(() => {
+                    setStateMessage(null); 
+                }, 8000); //hide message after 8 seconds
+            }
+        );
+        //Clears the form after sending the email
+        e.target.reset(); 
+    };
+
     return (
         <div className="lg:px-12 px-4" id="contact">
             <div className="text-headingColor text-center mb-20">
-                <p className="text-xl font-semibold mb-5">Get in Touch</p>
-                <h2 className="md:text-5xl text-4xl font-bold">My Experience</h2>
-                <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempora iste eligendi.</p>
+                <p className="text-xl font-semibold mb-5"><strong>For More Details</strong></p>
+                <h2 className="md:text-5xl text-4xl font-bold">Contact Me!</h2>
+                <p className="mt-5">Send a quick message for inquires, questions, and to reach out!</p>
             </div>
             {/* forms here */}
             <div className="md:w-2/3 mx-auto mb-20">
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <div className="flex flex-col sm:flex-row gap-8 items-center">
                         <div className="sm:w-1/2 w-full">
-                            <label htmlFor="fName" className="text-base text-headingColor w-full">First name</label>
+                            <label htmlFor="fName" className="text-base text-headingColor w-full" >First name</label>
                             <input type="text" id="fName" name="fName" className="block border border-primary
                             rounded-lg py-2 mt-2 w-full"/>
                         </div>
@@ -40,9 +76,9 @@ const Contact = () => {
                         <label htmlFor="option" className="text-base text-headingColor w-full">Choose a topic</label>
                         <select name="options" id="options" className="block border border-primary rounded-lg py-2 mt-2 w-full px-2">
                             <option value="0">Select one...</option>
-                            <option value="1">Inquires</option>
-                            <option value="2">Reach out</option>
-                            <option value="3">Questions</option>
+                            <option value="Inquires">Inquires</option>
+                            <option value="Reach out">Reach out</option>
+                            <option value="Question">Questions</option>
                         </select>
                     </div>
                     {/* Text area */}
@@ -51,16 +87,10 @@ const Contact = () => {
                         <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message" 
                         className="block border border-primary rounded-lg py-2 mt-2 w-full px-2"></textarea>
                     </div>
-                    {/* accepting terms */}
-                    <div>
-                        <input type="checkbox" name="agree" id="agree"/>
-                        <label htmlFor="agree" className="text-base text-headingColor w-full ml-3
-                        items-centers">I accept the terms</label>
-                    </div>  
-
                     {/* btn submit */}
                     <div className="w-36 mx-auto mt-8">
-                        <input type="submit" value="Submit" className="btn-primary bg-primary py-3 px-8 cursor-pointer w-full"/>
+                        <input type="submit" value="Submit" disabled = {isSubmitting} className="btn-primary bg-primary py-3 px-8 cursor-pointer w-full"/>
+                        {stateMessage && <p>{stateMessage}</p>}
                     </div>
                 </form>
             </div>
