@@ -11,7 +11,7 @@ const About = () => {
                 <div className='sm:w-1/2'>       
                     <p className='text-xl font-semibold mb-5'>About Me</p>
                     <h2 className='md:text-5xl text-4xl font-bold'>To Start off...</h2>
-                    <p className=' text-xl mt-8 md:pr-8 mb-8'>
+                    <p className=' text-lg mt-8 md:pr-8 mb-8'>
                     My name is <strong className="text-primary">Guillermo</strong>, a dedicated programming student with a year of learning in the field. 
                     Born in <strong className="text-primary">Bolivia</strong>, I’ve led an international lifestyle since middle childhood, having spent years in the <strong className="text-primary">United States</strong> and settled in <strong className="text-primary">Canada</strong> since 2012. 
                     These experiences have ultimately provided me with a broad range of perspectives that enhance my approach to <strong className="text-primary">technology</strong> and <strong className="text-primary">problem-solving</strong> through curiosity and adaptability. 
