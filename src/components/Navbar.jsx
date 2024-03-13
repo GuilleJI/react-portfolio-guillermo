@@ -65,16 +65,6 @@ const Navbar = () => {
                             Home                            
                         </Link>
                         <Link 
-                            to="skills" 
-                            spy={true} 
-                            activeClass="active" 
-                            smooth={true} 
-                            offset={-100} 
-                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
-                        >
-                            Skills
-                        </Link>
-                        <Link 
                             to="about" 
                             spy={true} 
                             activeClass="active" 
@@ -84,6 +74,17 @@ const Navbar = () => {
                         >
                             About Me
                         </Link>
+                        <Link 
+                            to="skills" 
+                            spy={true} 
+                            activeClass="active" 
+                            smooth={true} 
+                            offset={-100} 
+                            className="block py-2 px-4 cursor-pointer hover:text-gray-400"
+                        >
+                            Skills
+                        </Link>
+                        
                         <Link 
                             to="portfolio" 
                             spy={true} 
