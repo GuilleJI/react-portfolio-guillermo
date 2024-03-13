@@ -11,28 +11,27 @@ const About = () => {
                 <div className='sm:w-1/2'>       
                     <p className='text-xl font-semibold mb-5'>About Me</p>
                     <h2 className='md:text-5xl text-4xl font-bold'>To Start off...</h2>
-                    <p className='mt-8 md:pr-8 mb-8'>
-                    My name is Guillermo, and I am an aspiring, self-motivated, and purpose-driven programming student with over a year of exposure in this field.
-                    Born in Bolivia, I spent my childhood and early teens in the United States, returned to Bolivia, and finally settled in Canada in early 2012.
-                    I am currently enrolled as a second-year IT Programmer at NSCC, where I am committed to academic excellence, achieving high scores through discipline and resilience. 
-                    My goal is to graduate by early 2025.
+                    <p className=' text-xl mt-8 md:pr-8 mb-8'>
+                    My name is <strong className="text-primary">Guillermo</strong>, a dedicated programming student with a year of learning in the field. 
+                    Born in <strong className="text-primary">Bolivia</strong>, I’ve led an international lifestyle since middle childhood, having spent years in the <strong className="text-primary">United States</strong> and settled in <strong className="text-primary">Canada</strong> since 2012. 
+                    These experiences have ultimately provided me with a broad range of perspectives that enhance my approach to <strong className="text-primary">technology</strong> and <strong className="text-primary">problem-solving</strong> through curiosity and adaptability. 
+                    Currently, I am a second-year <strong className="text-primary">IT Programmer</strong> at <strong className="text-primary">NSCC</strong>, where my commitment to academic excellence has led to high scores.
+                    I am on track to graduate by early <strong className="text-primary">2025</strong>.
                     <br /><br/>
-                    I have a diverse range of hobbies and passions that keep me driven, such as reading and analyzing historical events, sketching (a hobby of mine since childhood), improving my physical fitness, traveling, and camping outdoors.
-                    Despite this, I am eager to acquire new skills and experiences and am excited about what the future holds.
+                    My hobbies are varied and include reading about historical events, sketching—a passion since childhood—maintaining physical fitness, traveling, and camping outdoors.
+                    These activities keep me driven and open to new experiences. I am excited about the future and eager to continue acquiring new skills.
                     <br/><br/>
-                    My thirst for knowledge led me to pursue this program, which is a blend of creative thinking, building from scratch, and solving challenges.
-                    As technology evolves, so does the learning curve for programmers. 
-                    Famous French Philosopher Voltaire once remarked, <strong>"The more I read, the more I acquire, the more certain I am that I know nothing."</strong>
-                    This perfectly encapsulates the ever-expanding nature of knowledge and my eagerness to embrace the opportunities that lie ahead.
-                    </p>
+                    I chose this program for its combination of <strong className="text-primary">creative thinking</strong>, hands-on building, and the challenge of solving complex problems. 
+                    As technology advances, I am aware that the learning curve for programmers is ever-expanding.   
+                    <strong className="text-primary"> Voltaire</strong> once remarked, <strong className="text-primary">“The more I read, the more I acquire, the more certain I am that I know nothing.”</strong></p>
                     <Link
-                        to="contact"
+                        to="skills"
                         spy={true}
                         activeClass="active"
                         smooth={true} 
                         offset={-100}                   
                     >
-                        <button className='btn-primary'>Contact Me</button>
+                        <button className='btn-primary'>Click Next</button>
                     </Link>
                     
                 </div>
