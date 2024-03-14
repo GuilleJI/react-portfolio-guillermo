@@ -66,9 +66,9 @@ export const Contact = () => {
     return (
         <div className="lg:px-12 px-4" id="contact">
             <div className="text-headingColor text-center mb-20">
-                <p className="text-xl font-semibold mb-5"><strong>For More Details</strong></p>
+                <p className="text-xl font-semibold mb-5">For More Details</p>
                 <h2 className="md:text-5xl text-4xl font-bold">Contact Me!</h2>
-                <p className="mt-5">Send a quick message for inquires, questions, and to reach out!</p>
+                <p className="mt-5">Feel free to send a message for any inquiries or if you’d like to reach out!</p>
             </div>
             {/* forms here */}
             <div className="md:w-2/3 mx-auto mb-20">
@@ -104,7 +104,6 @@ export const Contact = () => {
                             <option value="0">Select one...</option>
                             <option value="Inquires">Inquires</option>
                             <option value="Reach out">Reach out</option>
-                            <option value="Question">Questions</option>
                         </select>
                     </div>
                     {/* Text area */}
