@@ -18,14 +18,24 @@ export const Contact = () => {
     const email = form.current.querySelector('#email').value;
     const phone = form.current.querySelector('#phone').value;
     const options = form.current.querySelector('#options').value;
+    const message = form.current.querySelector('#message').value;
     
     // Check if form fields are empty 
-    if(!fName || !lName || !email || !phone || options === '0'){
+    if(!fName || !lName || !email || options === '0'){
         setStateMessage('Please fill out all fields.');
         setTimeout(() => {
             setStateMessage(null);
-        }, 8000); //hide message after 8 seconds       
-        return;
+        }, 8000); //hide message after 8 seconds  
+
+        return; //returning early if message field is empty 
+
+    }else if (!message){
+        setStateMessage('Please type your message');
+        setTimeout(() => {
+            setStateMessage(null);
+        }, 8000);
+
+        return; //returning early if message field is empty
     }
     setIsSubmitting(true);  
 
@@ -100,13 +110,13 @@ export const Contact = () => {
                     {/* Text area */}
                     <div className="w-full mb-8">
                         <label htmlFor="option" className="text-base text-headingColor w-full">Message</label>
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message" 
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message" 
                         className="block border border-primary rounded-lg py-2 mt-2 w-full px-2"></textarea>
                     </div>
                     {/* btn submit */}
                     <div className="w-36 mx-auto mt-8">
                         <input type="submit" value="Submit" disabled = {isSubmitting} className="btn-primary bg-primary py-3 px-8 cursor-pointer w-full"/>
-                        {stateMessage && <p>{stateMessage}</p>}
+                        {stateMessage && <p className='text-red-600'>{stateMessage}</p>}
                     </div>
                 </form>
             </div>

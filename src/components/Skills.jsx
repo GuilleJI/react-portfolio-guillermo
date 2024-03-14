@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 // Making some array of objects for card items
 const skills =[
     {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, Kotlin, Java, C#, C, and C++. This broad knowledge base allows for flexibility and adaptability when tackling various software development tasks.", image: "src/images/Programming.png"},
-    {id: 2, name: "Web Development", description: "Proficient in website design and development using HTML, CSS (SASS, Tailwind CSS, Bootstrap), and JavaScript (React.js, Node.js).", image: "src/images/Web Dev.png"},
+    {id: 2, name: "Web Development", description: "Proficient in website design and development using HTML, CSS (SASS, Tailwind CSS, Bootstrap), and JavaScript (React.js, Node.js), and C# (ASP.NET).", image: "src/images/Web Dev.png"},
     {id: 3, name: "Data Management", description: "Familiar with data fundamentals, including SQL, ADO.NET, and Entity Framework.", image: "src/images/Data Management.png"},
     {id: 4, name: "Mobile Development", description: "Experienced in Java and Kotlin for Android development using Android Studio.", image: "src/images/Mobile Development.png"},
     {id: 5, name: "Version Control", description: "Proficient in Git, with experience in managing GitHub projects including branches and commits.", image: "src/images/Version Control.png"},
