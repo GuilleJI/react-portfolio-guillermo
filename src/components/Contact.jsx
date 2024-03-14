@@ -10,7 +10,23 @@ export const Contact = () => {
 
     const sendEmail = (e) => {
     e.persist();
-    e.preventDefault();
+    e.preventDefault(); // Prevent form from being submitted
+
+    // Get form data 
+    const fName = form.current.querySelector('#fName').value;
+    const lName = form.current.querySelector('#LName').value;
+    const email = form.current.querySelector('#email').value;
+    const phone = form.current.querySelector('#phone').value;
+    const options = form.current.querySelector('#options').value;
+    
+    // Check if form fields are empty 
+    if(!fName || !lName || !email || !phone || options === '0'){
+        setStateMessage('Please fill out all fields.');
+        setTimeout(() => {
+            setStateMessage(null);
+        }, 8000); //hide message after 8 seconds       
+        return;
+    }
     setIsSubmitting(true);  
 
     emailjs
