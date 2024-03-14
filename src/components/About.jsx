@@ -13,7 +13,7 @@ const About = () => {
                     <h2 className='md:text-5xl text-4xl font-bold'>To Start off...</h2>
                     <p className=' text-lg mt-8 md:pr-8 mb-8'>
                     My name is <strong className="text-primary">Guillermo</strong>, a dedicated programming student with a year of learning in the field. 
-                    Born in <strong className="text-primary">Bolivia</strong>, I’ve led an international lifestyle since middle childhood, having spent years in the <strong className="text-primary">United States</strong> and settled in <strong className="text-primary">Canada</strong> since 2012. 
+                    Born in <strong className="text-primary">Bolivia</strong>, I’ve experienced a tri-cultural upbringing since childhood, having spent years in the <strong className="text-primary">United States</strong> and settled in <strong className="text-primary">Canada</strong> since 2012. 
                     These experiences have ultimately provided me with a broad range of perspectives that enhance my approach to <strong className="text-primary">technology</strong> and <strong className="text-primary">problem-solving</strong> through curiosity and adaptability. 
                     Currently, I am a second-year <strong className="text-primary">IT Programmer</strong> at <strong className="text-primary">NSCC</strong>, where my commitment to academic excellence has led to high scores.
                     I am on track to graduate by early <strong className="text-primary">2025</strong>.
