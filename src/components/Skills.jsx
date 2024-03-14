@@ -1,3 +1,5 @@
+import {Link} from 'react-scroll';
+
 // Making some array of objects for card items
 const skills =[
     {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, Kotlin, Java, C#, C, and C++. This broad knowledge base allows for flexibility and adaptability when tackling various software development tasks.", image: "src/images/Programming.png"},
@@ -20,7 +22,6 @@ const Skills = () => {
                 <p className="text-xl font-semibold mb-5">My Skills</p>
                 <h2 className="md:text 5xl text-4xl font-bold">My Expertise</h2>
             </div> 
-
             {/* skills card */} 
             <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
                 {
@@ -30,8 +31,21 @@ const Skills = () => {
                         <p className="text-base">{skill.description}</p><br/>
                     </div>)
                 }
-            </div> 
-        </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div className="content-center flex justify-center">
+                <Link
+                    to="portfolio"
+                    spy={true}
+                    activeClass="active"
+                    smooth={true}
+                    offset={-100}
+                ><button className='btn-primary object-center'>Click Next</button></Link>
+            </div>
+            <br/>
+        </div>       
     );
 };
 
