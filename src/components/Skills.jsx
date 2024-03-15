@@ -42,7 +42,7 @@ const Skills = () => {
                     activeClass="active"
                     smooth={true}
                     offset={-100}
-                ><button className='btn-primary object-center'>Click Next</button></Link>
+                ><button className='btn-primary object-center hover:drop-shadow-2xl'>Click Next</button></Link>
             </div>
             <br/>
         </div>       

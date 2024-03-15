@@ -114,7 +114,7 @@ export const Contact = () => {
                     </div>
                     {/* btn submit */}
                     <div className="w-36 mx-auto mt-8">
-                        <input type="submit" value="Submit" disabled = {isSubmitting} className="btn-primary bg-primary py-3 px-8 cursor-pointer w-full"/>
+                        <input type="submit" value="Submit" disabled = {isSubmitting} className="btn-primary bg-primary py-3 px-8 cursor-pointer w-full hover:drop-shadow-2xl"/>
                         {stateMessage && <p className='text-red-600'>{stateMessage}</p>}
                     </div>
                 </form>

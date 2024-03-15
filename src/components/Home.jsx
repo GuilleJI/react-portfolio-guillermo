@@ -20,7 +20,7 @@ const Home = () => {
                   smooth={true}
                   offset={-100}
               >
-                <button className="btn-primary">Let's get started!</button>
+                <button className="btn-primary hover:drop-shadow-2xl">Let's get started!</button>
               </Link>             
           </div>            
         </div>
