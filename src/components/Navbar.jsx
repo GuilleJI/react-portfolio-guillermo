@@ -49,7 +49,7 @@ const Navbar = () => {
                             smooth={true}
                             offset={-100} 
                         >
-                            <img src="/images/logo portfolio.png" alt="" className="h-10"/>
+                            <img src="images/logo portfolio.png" alt="" className="h-10"/>
                         </Link>                        
                     </div>
                     {/* menu items for large devices */}

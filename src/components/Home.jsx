@@ -1,4 +1,3 @@
-import bannerImg from '/images/Abstract.avif'
 import {Link} from 'react-scroll';
 
 const Home = () => {
@@ -6,7 +5,7 @@ const Home = () => {
       <div className="mt-20 bg-bgShade" id="home">
         <div className="lg:px-12 px-4 flex flex-col md:flex-row-reverse items-center justify-between py-24 gap-5">
           <div className="md:w-1/2 w-full">
-                <img src="/images/Abstract.avif" alt="" className="'w-full'" />
+                <img src="images/Abstract.avif" alt="" className="'w-full'" />
           </div>
 
           <div className="md:w-1/2 w-full mt-5">
