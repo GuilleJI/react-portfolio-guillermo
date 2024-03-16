@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll';
-import logo from '../images/logo portfolio.png'
 import {FaLinkedin, FaGithub} from 'react-icons/fa'
 
 
@@ -15,7 +14,7 @@ const Footer = () => {
                     offset={-100} 
                     className='flex-shrink-0'
                 >
-                    <img src={logo} alt="" />
+                    <img src="/images/logo portfolio.png" alt="" />
                 </Link>
                 <div className='flex flex-col sm:flex-row md:items-center gap-4 flex-wrap cursor-pointer'>
                     <Link 
