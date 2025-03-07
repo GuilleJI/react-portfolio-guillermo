@@ -1,20 +1,27 @@
 import {Link} from 'react-scroll';
 
 // Making some array of objects for card items
-const skills =[
-    {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, Kotlin, Java, C#, C, and C++. This broad knowledge base allows for flexibility and adaptability when tackling various software development tasks.", image: "images/Programming.png"},
-    {id: 2, name: "Web Development", description: "Proficient in website design and development using HTML, CSS (SASS, Tailwind CSS, Bootstrap),JavaScript (React.js, Node.js), and C# (ASP.NET).", image: "images/webdev.png"},
-    {id: 3, name: "Data Management", description: "Familiar with data fundamentals, including SQL, ADO.NET, and Entity Framework.", image: "images/datamanagement.png"},
-    {id: 4, name: "Mobile Development", description: "Experienced in Java and Kotlin for Android development using Android Studio.", image: "images/mobiledev.png"},
-    {id: 5, name: "Version Control", description: "Proficient in Git, with experience in managing GitHub projects including branches and commits.", image: "images/versioncontrol.png"},
-    {id: 6, name: "Design Tools", description: "Proficient in Figma for interface design, prototyping, and real-time collaboration. Furthermore, I am adept at using Figma's vector editing capabilities and components feature to create reusable design elements, ensuring consistency across all designs.", image: "images/figma.png"},
-    {id: 7, name: "Professional Practices for IT", description: "Understanding of professional standards, ethics, and practices in the IT industry.", image: "images/IT.png"},
-    {id: 8, name: "Project Management", description: "Experience collaborating projects from conception to completion, often a key component of coursework. ", image: "images/Management.png"},
-    {id: 9, name: "Problem-solving", description: "Experienced in applying logical reasoning to tackle intricate challenges, a proficiency developed through extensive involvement in programming and systems analysis tasks.", image: "images/problemsolving.png"},
-    {id: 10, name: "Teamwork", description: "Accustomed to collaborative environments, with a focus on projects that require team synergy and effective communication.", image: "images/Teamwork.png"},
-    {id: 11, name: "Attention to Detail", description: "Exhibit strong proficiency in time management and exceptional organizational abilities.", image: "images/Detail.png"},
-    {id: 12, name: "Eagerness to Learn", description: "Proactively pursuing new experiences and knowledge to enhance existing skills.", image: "images/Learning.png"},
+const techSkills =[
+    {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, C#, Kotlin, HTML/CSS, SQL, and Python.", image: "images/Programming.png"},
+    {id: 2, name: "Frameworks and Libraries", description: "Proficient in website design and development using frameworks like ASP.NET, WPF, React, Flask, Next.js, Node.js, and React Native.", image: "images/webdev.png"},
+    {id: 3, name: "Version Control", description: "Proficient in Git, with experience in managing GitHub projects including branches and commits.", image: "images/versioncontrol.png"}
+    ,
+    {id: 4, name: "Design Tools", description: "Proficient in Figma for interface design, prototyping, and real-time collaboration. Adept at leveraging its vector editing tools and component features to create reusable design elements that ensure visual consistency across projects.", image: "images/figma.png"}
+    ,
+    {id: 5, name: "AI and Machine Learning", description: "", image:""}
+    
 ]
+
+const softSkills = [
+    {id: 1, name: "Teamwork-Oriented", description: "", image:"images/Teamwork.png"}
+    ,
+    {id: 2, name: "Active Listening", description: "", image:"images/Listening.png"}
+    ,
+    {id: 3, name: "Willingness to Learn", description: "", image: "images/Learning.png"}
+    ,
+    {id: 4, name: "Effective Communication (English & Spanish)", description: "", image:"images/Communication.png"}
+]
+
 const Skills = () => {
     return (
         <div className="lg:mx-12 mx-4 py-32" id="skills">
@@ -23,15 +30,37 @@ const Skills = () => {
                 <h2 className="md:text 5xl text-4xl font-bold">My Expertise</h2>
             </div> 
             {/* skills card */} 
-            <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 drop-shadow-lg hover:drop-shadow-xl">
-                {
-                    skills.map(skill => <div key={skill.id} className="bg-bgShade p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillcard">
-                        <img src={skill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-3"/>
-                        <h3 className="text-lg font-bold mb-4">{skill.name}</h3>
-                        <p className="text-base">{skill.description}</p><br/>
-                    </div>)
-                }
+            <div className="mx-auto">
+                <p className="text-2xl font-semibold mb-5"> Technical Skills</p>
+                <div>
+                    
+                </div>
+                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 drop-shadow-lg hover:drop-shadow-xl">
+                    
+                    {
+                        techSkills.map(techSkill => <div key={techSkill.id} className="bg-bgShade p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillcard">
+
+                            <img src={techSkill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-4 mx-auto"/>
+                            <h3 className="text-lg text-center font-bold mb-4">{techSkill.name}</h3>
+                            <p className="text-base p-2 mx-2">{techSkill.description}</p><br/>
+                        </div>)
+                    }
+                
+                </div>
+                <br/><br/>
+                <p className="text-2xl font-semibold mb-5"> Professional Skills</p>
+                <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 drop-shadow-lg hover:drop-shadow-xl">
+                    {
+                        softSkills.map(softSkill => <div key={softSkill.id} className="bg-bgShade p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillcard">
+                            <img src={softSkill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-3" />
+                            <h3 className="text-lg font-bold mb-4">{softSkill.name}</h3>
+                            <p className="text-base">{softSkill.description}</p><br/>
+                        </div> )
+                    }
+                </div>
             </div>
+            
+
             <br/>
             <br/>
             <br/>
