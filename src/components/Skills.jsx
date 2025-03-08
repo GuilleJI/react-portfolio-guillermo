@@ -29,7 +29,7 @@ const softSkills = [
 
 const Skills = () => {
     return (
-        <div className="lg:mx-12 mx-4 py-32" id="skills">
+        <div className="lg:mx-12 mx-4 py-23" id="skills">
             <div className="text-headingColor mb-20">
                 <p className="text-xl font-semibold mb-5">Skills</p>
                 <h2 className="md:text 5xl text-4xl font-bold">My Expertise</h2>
