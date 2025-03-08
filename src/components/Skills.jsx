@@ -37,10 +37,10 @@ const Skills = () => {
             {/* skills card */} 
             <div className="mx-auto">
                 <p className="text-2xl font-semibold mb-5"> Professional Skills</p>
-                <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 drop-shadow-lg hover:drop-shadow-xl">
+                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 drop-shadow-lg hover:drop-shadow-xl">
                     {
                         softSkills.map(softSkill => <div key={softSkill.id} className="bg-bgShade p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillcard">
-                            <img src={softSkill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-3" />
+                            <img src={softSkill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-4 mx-auto" />
                             <h3 className="text-lg font-bold mb-4">{softSkill.name}</h3>
                             <p className="text-base">{softSkill.description}</p><br/>
                         </div> )
@@ -52,7 +52,6 @@ const Skills = () => {
                     
                     {
                         techSkills.map(techSkill => <div key={techSkill.id} className="bg-bgShade p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillcard">
-
                             <img src={techSkill.image} alt="" className="w-30 h-30 bg-white rounded-lg shadow-md mb-7 p-4 mx-auto"/>
                             <h3 className="text-lg text-center font-bold mb-4">{techSkill.name}</h3>
                             <p className="text-base p-2 mx-2">{techSkill.description}</p><br/>
