@@ -31,6 +31,7 @@ const About = () => {
                         smooth={true} 
                         offset={-100}                   
                     >
+                        <br/><br/>
                         <button className='btn-primary hover:drop-shadow-2xl'>Click Next</button>
                     </Link>
                     
