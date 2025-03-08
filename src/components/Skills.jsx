@@ -23,7 +23,7 @@ const softSkills = [
     ,
     {id: 5, name: "Creativity", description: "", image: "public/images/Creative.png"}
     ,
-    {id: 6, name: "", description: "", image: ""}
+    {id: 6, name: "Initiative", description: "", image: "public/images/Initiative.png"}
 
 ]
 
