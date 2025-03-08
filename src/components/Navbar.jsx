@@ -3,7 +3,7 @@ import { useState } from "react";
 import {Link} from 'react-scroll';
 
 // import logo
-import logo from '/images/logo portfolio.png'
+import logo from '/public/images/logoPortfolio.png'
 // import menuicon from react icons
 import { HiMenu } from "react-icons/hi"
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                             smooth={true}
                             offset={-100} 
                         >
-                            <img src="images/logo portfolio.png" alt="" className="h-10"/>
+                            <img src="public/images/logoPortfolio.png" alt="" className="h-10"/>
                         </Link>                        
                     </div>
                     {/* menu items for large devices */}
