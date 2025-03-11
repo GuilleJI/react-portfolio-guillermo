@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react'; 
-
+import GifPlayer from 'react-gif-player'; 
     
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
@@ -20,7 +20,8 @@ const Portfolio = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
             {
                 projects.map(project => <div key={project.id} className='shadow-xl rounded-lg cursor-pointer'>
-                        <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' />
+                        {/* <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' /> */}
+                        <GifPlayer gif={project.gif} still={project.image}/>
                         <div className='p-8'>
                             <h3 className='text-2xl font-semibold mb-2 text-headingColor'>{project.name}</h3>
                             <p className='text-body mb-4'>{project.description}</p>
