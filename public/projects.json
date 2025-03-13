@@ -1,8 +1,9 @@
 [
-    {"id": 1, "name" : "Summarify", "description": "", "image":"images/portfolio1.png", "gif": "images/Summarify.gif"},
-    {"id": 2, "name" : "Hydro Squad", "description": "", "image":"images/pokedex.png", "gif": "images/Hydro Squad.gif" },
-    {"id": 3, "name" : "Smart TreadMill", "description": "", "image":"images/History.png", "gif":"images/TreadMill.gif" },
-    {"id": 4, "name" : "Real-time-bus transit data using API ", "description": "For this project, I decided to caption real-life transit data from Halifax Transit’s open data. This data is used by Google and other third-party developers to create apps for public use.", "image": "images/transitdata.png"},
-    {"id": 5, "name": "WORLD DICTIONARY", "description": "WORLD DICTIONARY is an interactive web atlas built with JavaScript, HTML5, CSS, and JSON. It features a form on the main page for selecting countries, displaying their flags and information, with options to switch between kilometers and miles. A click on the main page leads to a Wikipedia lookup for in-depth country details. This compact webpage serves as both an educational resource and a showcase of web development skills.", "image":"images/worlddictionary.png"},
-    {"id": 6, "name": "Knowledge Nexus", "description": "", "image": "", "gif": "images/World Dictionary.gif"}
+    {"id": 1, "name" : "Summarify", "description": "", "image":"public/images/AI.jpg", "gif": "public/images/Summarify.gif"},
+    {"id": 2, "name" : "Hydro Squad", "description": "", "image":"public/images/Restaurant.jpg", "gif": "public/images/Hydro Squad.gif" },
+    {"id": 3, "name" : "Smart TreadMill", "description": "", "image":"public/images/Treadmills.jpg", "gif":"public/images/TreadMill.gif" },
+    {"id": 4, "name" : "Halifax Transit real-time data using API ", "description": "For this project, I decided to caption real-life transit data from Halifax Transit’s open data. This data is used by Google and other third-party developers to create apps for public use.", "image": "public/images/Transit.jpg", "gif": "public/images/HalifaxTransit.gif"},
+    {"id": 5, "name": "World Dictionary", "description": "WORLD DICTIONARY is an interactive web atlas built with JavaScript, HTML5, CSS, and JSON. It features a form on the main page for selecting countries, displaying their flags and information, with options to switch between kilometers and miles. A click on the main page leads to a Wikipedia lookup for in-depth country details. This compact webpage serves as both an educational resource and a showcase of web development skills.", "image":"public/images/knowledge.jpg", "gif": "public/images/World Dictionary.gif"},
+    {"id": 6, "name": "Knowledge Nexus", "description": "", "image": "public/images/Bookstore.avif", "gif": "public/images/Knowledge Nexus.gif"},
+    {"id": 7, "name": "IMDB Explorer", "description": "", "image": "public/images/Movies.jpg", "gif": "public/images/IMDB Explorer.gif"}
 ]

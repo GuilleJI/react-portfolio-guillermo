@@ -21,7 +21,7 @@ const Portfolio = () => {
             {
                 projects.map(project => <div key={project.id} className='shadow-xl rounded-lg cursor-pointer'>
                         {/* <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' /> */}
-                        <GifPlayer gif={project.gif} still={project.image}/>
+                        <GifPlayer gif={project.gif} className='hover:scale-105 transition-all duration-300'  still={project.image}/> 
                         <div className='p-8'>
                             <h3 className='text-2xl font-semibold mb-2 text-headingColor'>{project.name}</h3>
                             <p className='text-body mb-4'>{project.description}</p>
