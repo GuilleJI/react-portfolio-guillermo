@@ -12,18 +12,13 @@ const About = () => {
                     <p className='text-xl font-semibold mb-5'>About Me</p>
                     <h2 className='md:text-5xl text-4xl font-bold'>To Start off...</h2>
                     <p className=' text-lg mt-8 md:pr-8 mb-8'>
-                    My name is <strong className="text-primary">Guillermo</strong>, a dedicated programming student with a year of learning in the field. 
-                    Born in <strong className="text-primary">Bolivia</strong>, I’ve experienced a tri-cultural upbringing since childhood, having spent years in the <strong className="text-primary">United States</strong> and settled in <strong className="text-primary">Canada</strong> since 2012. 
-                    These experiences have ultimately provided me with a broad range of perspectives that enhance my approach to <strong className="text-primary">technology</strong> and <strong className="text-primary">problem-solving</strong> through curiosity and adaptability. 
-                    Currently, I am a second-year <strong className="text-primary">IT Programmer</strong> at <strong className="text-primary">NSCC</strong>, where my commitment to academic excellence has led to high scores.
-                    I am on track to graduate by early <strong className="text-primary">2025</strong>.
-                    <br /><br/>
-                    My hobbies are varied and include reading about historical events, sketching—a passion since childhood—maintaining physical fitness, traveling, and camping outdoors.
-                    These activities keep me driven and open to new experiences. I am excited about the future and eager to continue acquiring new skills.
+                    Hi, I'm <strong className="text-primary">Guillermo</strong>—a dedicated programming graduating student with a passion for creating digital experiences that are both intuitive and impactful.  
+                    Born in <strong className="text-primary">Bolivia</strong>, I’ve embraced a rich, multicultural background, having spent my childhood in the <strong className="text-primary">United States</strong> before settling in <strong className="text-primary">Canada</strong> in 2012. 
+                    My technical expertise spans both <strong className="text-primary">front-end</strong> and <strong className="text-primary">back-end</strong> development, and I thrive in environemnts that push me to innovate and collaborate. 
                     <br/><br/>
-                    I chose this program for its combination of <strong className="text-primary">creative thinking</strong>, hands-on building, and the challenge of solving complex problems. 
-                    As technology advances, I am aware that the learning curve for programmers is ever-expanding.   
-                    <strong className="text-primary"> Voltaire</strong> once remarked, <strong className="text-primary">“The more I read, the more I acquire, the more certain I am that I know nothing.”</strong></p>
+                    I take pride in a <strong className="text-primary">user-first</strong> approach to <strong className="text-primary">design and development</strong>, seamlessly blending technical proficiency and creativity. Whether through team projects, hackathons or a hands-on professional work term project, I've honed my ability to tackle <strong className="text-primary">real-world challenges </strong> with agility and insight.
+                    <br /><br/>
+                    Beyond coding, I'm continually exploring innovative ways to integrate <strong className="text-primary">emerging technologies</strong>—like AI—into projects and leverage current design trends to enhance digital interactions. I invite you to explore my portfolio and learn more about my journey, my skills, and the creative solutions I bring to the table.</p>
                     <Link
                         to="skills"
                         spy={true}
