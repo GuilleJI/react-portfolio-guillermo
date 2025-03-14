@@ -1,3 +1,4 @@
+
 import React, { useState, useRef } from 'react';
 //import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
@@ -40,8 +41,8 @@ export const Contact = () => {
     setIsSubmitting(true);  
 
     emailjs
-        .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
-            publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
+            publicKey: import.meta.env.VITE_PUBLIC_KEY,
         })
         .then(
             (result) => {
