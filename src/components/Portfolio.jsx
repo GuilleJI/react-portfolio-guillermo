@@ -17,11 +17,11 @@ const Portfolio = () => {
             </div>
             {/* need to create a json file for the projects data */}
             {/* After creating a json file, and fetching data, we now create projects card */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-3'>
             {
                 projects.map(project => <div key={project.id} className='shadow-xl rounded-lg cursor-pointer'>
                         {/* <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' /> */}
-                        <GifPlayer gif={project.gif} className='hover:scale-105 transition-all duration-300'  still={project.image}/> 
+                        <GifPlayer gif={project.gif} className='hover:scale-110 transition-all duration-300'  still={project.image}/> 
                         <div className='p-8'>
                             <h3 className='text-2xl font-semibold mb-2 text-headingColor py-2'>{project.name}</h3>
                             <p className='text-body mb-4'>{project.description}</p>
