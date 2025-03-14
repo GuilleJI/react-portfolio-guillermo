@@ -16,7 +16,7 @@ const techSkills =[
 const softSkills = [
     {id: 1, name: "Teamwork-Oriented", description: "With a background in hackathons and collaborative projects, I've seen firsthand how teamwork drives success and achieves meaningful goals. I value diverse perspectives from peers and focus on delivering high-quality results through cooperation and support. My aim is to contribute to a positive impact by helping the team thrive.", image:"images/Team.png"}
     ,
-    {id: 2, name: "Active Listening", description: "Staying alert and proactive in discussions is a strength I bring to any team. I make it a priority to fully understand project and team needs before acting, which allows me to contribute effectively to collaboration and decision-making. By staying engaged, I help ensure our collective efforts are well-informed and aligned.", image:"public/images/Active Listening.png"}
+    {id: 2, name: "Active Listening", description: "Staying alert and proactive in discussions is a strength I bring to any team. I make it a priority to fully understand project and team needs before acting, which allows me to contribute effectively to collaboration and decision-making. By staying engaged, I help ensure our collective efforts are well-informed and aligned.", image:"images/Active Listening.png"}
     ,
     {id: 3, name: "Willingness to Learn", description: "I'm passionate about learning new tools and technologies to keep my skills sharp and relevant. Curiosity drives me to grow, not just for myself, but to bring fresh ideas and innovation to projects. This commitment supports my ability make a positive impact alongside my teammates.", image: "images/Learn.png"}
     ,
