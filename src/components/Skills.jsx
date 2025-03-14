@@ -2,14 +2,14 @@ import {Link} from 'react-scroll';
 
 // Making some array of objects for card items
 const techSkills =[
-    {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, C#, Kotlin, SQL, and Python.", image: "public/images/Programming Languages.png"},
+    {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, C#, Kotlin, SQL, Java, and Python.", image: "public/images/Programming Languages.png"},
     {id: 2, name: "Frameworks and Libraries", description: "Proficient in website design and development using frameworks like ASP.NET, WPF, React, Flask, Next.js, Node.js, and React Native.", image: "public/images/Frameworks.png"},
     {id: 3, name: "Version Control", description: "Proficient in Git, with experience in managing GitHub projects including branches and commits.", image: "images/versioncontrol.png"}
     ,
     {id: 4, name: "Design Tools", description: "Proficient in Figma for interface design, prototyping, and real-time collaboration. Adept at leveraging its vector editing tools and component features to create reusable design elements that ensure visual consistency across projects.", image: "images/figma.png"}
     ,
-    {id: 5, name: "AI and Machine Learning", description: "Experienced in developing projects utilizing NLP models and pipelines, leveraging community libraries such as Hugging Face.as", image:"public/images/HuggingFace.png"},
-    {id: 6, name: "Databases", description:"MySQL, MongoDB"}
+    {id: 5, name: "AI and Machine Learning", description: "Experienced in developing projects utilizing NLP models and pipelines, leveraging community libraries such as Hugging Face.", image:"public/images/HuggingFace.png"},
+    {id: 6, name: "Databases", description:"Skilled in managing and optimizing databases, with experience in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server.", image: "public/images/Database.png"}
     
 ]
 
