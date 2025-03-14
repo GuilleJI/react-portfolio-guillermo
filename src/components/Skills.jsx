@@ -20,7 +20,7 @@ const softSkills = [
     ,
     {id: 3, name: "Willingness to Learn", description: "I'm passionate about learning new tools and technologies to keep my skills sharp and relevant. Curiosity drives me to grow, not just for myself, but to bring fresh ideas and innovation to projects. This commitment supports my ability make a positive impact alongside my teammates.", image: "images/Learn.png"}
     ,
-    {id: 4, name: "Effective Communication (English & Spanish)", description: "Clear communication with both technical an non-technical audiences is something I've honed through past projects and brainstorming sessions. Being bilingual in English and Spanish enhances my ability to connect teams and stakeholders, ensuring smooth interactions and shared understanding. It's all about building bridges for better collaboration.", image:"public/images/Communication.png"}
+    {id: 4, name: "Effective Communication (English & Spanish)", description: "Clear communication with both technical an non-technical audiences is something I've honed through past projects and brainstorming sessions. Being bilingual in English and Spanish enhances my ability to connect teams and stakeholders, ensuring smooth interactions and shared understanding. It's all about building bridges for better collaboration.", image:"images/Communication.png"}
     ,
     {id: 5, name: "Creativity", description: "I love bringing creative ideas to mobile and web development, as well as UI design, with focus on improving functionality and user experience. Innovative thinking helps me turn challenges into practical solutions, and I enjoy sharing perspectives that can spark inspiration within the team.", image: "public/images/Creative.png"}
     ,
