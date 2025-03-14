@@ -11,7 +11,7 @@ const Home = () => {
           <div className="md:w-1/2 w-full mt-5">
               <h2 className="text-2xl text-headingColor font-semibold mb-5">Hello, I'm Guillermo Jimenez Iriarte</h2>
               <h1 className="md:text-6xl text-4xl font-bold text-headingColor leading-snug md:leading-[76px] mb-5">I'm a Graduating <span className="text-primary">IT Programming Student </span> at NSCC</h1>
-              <p className="text-body text-2xl leading-9 mb-8">Currently aspiring to <span className="text-primary"><strong>pursue</strong></span> Full-Stack Web Development with a <span className="text-primary"><strong>background </strong></span>in front-end and back-end development. I am pleased to welcome you to my website portfolio!</p>
+              <p className="text-body text-2xl leading-9 mb-8">I specialize in <span className="text-primary"><strong>Full-Stack Development</strong></span>, focusing on <span className="text-primary"><strong>Intuitive, Innovative Solutions</strong></span>. Welcome to my portfolio!</p>
               <Link
                   to="about"
                   spy={true}
