@@ -40,8 +40,8 @@ export const Contact = () => {
     setIsSubmitting(true);  
 
     emailjs
-        .sendForm('service_bg8ulkh', 'template_1u4urlq', form.current, {
-            publicKey: 'KL6Puj5VMU4rNBrKB',
+        .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
+            publicKey: process.env.REACT_APP_PUBLIC_KEY,
         })
         .then(
             (result) => {
