@@ -23,13 +23,14 @@ const Portfolio = () => {
                         {/* <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' /> */}
                         <GifPlayer gif={project.gif} className='hover:scale-110 transition-all duration-300'  still={project.image}/> 
                         <div className='p-8'>
-                            <h3 className='text-2xl font-semibold mb-2 text-headingColor py-2'>{project.name}</h3>
+                            <h3 className='text-xl font-semibold mb-2 text-headingColor py-2'>{project.name}</h3>
                             <p className='text-body mb-4'>{project.description}</p>
-                        </div>
+                            <br/>
+                            <a href={project.link} className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-4 px-4 rounded"> Github Link </a>
+                        </div>                
                     </div>)
             }
         </div>
-
         </div>
     );
 };
