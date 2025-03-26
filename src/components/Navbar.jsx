@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import {Link} from 'react-scroll';
 
+
 // import logo
 import logo from '/images/Logo.png'
 // import menuicon from react icons

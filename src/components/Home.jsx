@@ -1,4 +1,5 @@
 import {Link} from 'react-scroll';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const Home = () => {
     return (
@@ -12,6 +13,16 @@ const Home = () => {
               <h2 className="text-2xl text-headingColor font-semibold mb-5">Hello, I'm Guillermo Jimenez Iriarte</h2>
               <h1 className="md:text-6xl text-4xl font-bold text-headingColor leading-snug md:leading-[76px] mb-5">I'm a Graduating <span className="text-primary">IT Programming Student </span> at NSCC</h1>
               <p className="text-body text-2xl leading-9 mb-8">I specialize in <span className="text-primary"><strong>Full-Stack Development</strong></span>, focusing on <span className="text-primary"><strong>Intuitive, Innovative Solutions</strong></span>. Welcome to my portfolio!</p>
+              {/* social icons */}
+              <div className="flex items-center gap-4">
+                  <a href="https://www.linkedin.com/in/guillermo-jimenez-iriarte/" target="_blank">
+                    <FaLinkedin className="cursor-pointer hover:-translate-y-3 transition-all dur text-6xl hover:text-primary"/>
+                  </a>
+                  <a href="https://github.com/GuilleJI" target="_blank">
+                    <FaGithub className="cursor-pointer hover:-translate-y-3 transition-all dur text-6xl hover:text-primary"/>
+                  </a>
+              </div>
+              <br/><br/>
               <Link
                   to="about"
                   spy={true}
@@ -20,7 +31,7 @@ const Home = () => {
                   offset={-100}
               >
                 <button className="btn-primary hover:drop-shadow-2xl">Let's get started!</button>
-              </Link>             
+              </Link>     
           </div>            
         </div>
         <br/>
