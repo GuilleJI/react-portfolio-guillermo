@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react'; 
 import GifPlayer from 'react-gif-player'; 
+import { RiExternalLinkFill } from "react-icons/ri";
     
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
@@ -21,12 +22,15 @@ const Portfolio = () => {
             {
                 projects.map(project => <div key={project.id} className='shadow-xl rounded-lg cursor-pointer'>
                         {/* <img src={project.image} alt='' className='hover:scale-90 transition-all duration-300' /> */}
+
                         <GifPlayer gif={project.gif} className='hover:scale-110 transition-all duration-300'  still={project.image}/> 
                         <div className='p-8'>
                             <h3 className='text-xl font-semibold mb-2 text-headingColor py-2'>{project.name}</h3>
                             <p className='text-body mb-4'>{project.description}</p>
                             <br/>
-                            <a href={project.link} className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-4 px-4 rounded"> Github Link </a>
+                            <a href={project.link} target="_blank">
+                                <RiExternalLinkFill className="text-3xl transition delay-120 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110" />
+                            </a>
                         </div>                
                     </div>)
             }
