@@ -23,7 +23,7 @@ const softSkills = [
     ,
     {id: 4, name: "Effective Communication (English & Spanish)", description: "I'm bilingual and confident communicating with both technical and non-technical audiences. Whether discussing ideas or reporting progress, I aim to foster clear and inclusive collaboration.", image:"/images/Communication.png"}
     ,
-    {id: 5, name: "Creativity", description: "I enjoy designing user-friendly solutions and bringing new ideas into UI design and fron-end projects. Creative thinking helps me enhance usability and functionality.", image: "/images/Creative.png"}
+    {id: 5, name: "Creativity", description: "I enjoy designing user-friendly solutions and bringing new ideas into UI design and front-end projects. Creative thinking helps me enhance usability and functionality.", image: "/images/Creative.png"}
     ,
     {id: 6, name: "Initiative", description: "I take initiative when it's needed — whether clarifying project goals or offering solutions. I aim to add value while staying aligned with team structure and expectations.", image: "/images/Initiative.png"}
 
