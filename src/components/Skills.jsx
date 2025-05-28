@@ -2,29 +2,30 @@ import {Link} from 'react-scroll';
 
 // Making some array of objects for card items
 const techSkills =[
-    {id: 1, name: "Programming Languages", description: "Experienced in a diverse range of programming languages, including but not limited to JavaScript, C#, Kotlin, SQL, Java, and Python.", image: "/images/Programming Languages.png"},
-    {id: 2, name: "Frameworks and Libraries", description: "Proficient in website design and development using frameworks like ASP.NET, WPF, React, Flask, Next.js, Node.js, and React Native.", image: "/images/Web Development.png"},
-    {id: 3, name: "Version Control", description: "Proficient in Git, with experience in managing GitHub projects including branches and commits.", image: "/images/Remote.png"}
+    {id: 1, name: "Programming Languages", description: "Versatile in JavaScript, TypeScript, C#, SQL, and Python —  applied across mobile, web, and data-driven academic projects.", image: "/images/Programming Languages.png"},
+    {id: 2, name: "Frameworks and Libraries", description: "Skilled in building responsive, user-friendly interfaces with React, React Native, and Next.js. Comfortable using Flask for lightweight web app logic.", image: "/images/Web Development.png"}
     ,
-    {id: 4, name: "Design Tools", description: "Proficient in Figma for interface design, prototyping, and real-time collaboration. Adept at leveraging its vector editing tools and component features to create reusable design elements that ensure visual consistency across projects.", image: "/images/figma.png"}
+    {id: 3, name: "Tools and Platforms", description: "Proficient with Git and Github for version control and collaborative workflows. Experienced in using VS Code and Figma for design and development.", image: "/images/Remote.png"}
     ,
-    {id: 5, name: "AI and Machine Learning", description: "Experienced in developing projects utilizing NLP models and pipelines, leveraging community libraries such as Hugging Face.", image:"/images/HuggingFace.png"},
-    {id: 6, name: "Databases", description:"Skilled in managing and optimizing databases, with experience in SQLite, PostgreSQL, MySQL, and Microsoft SQL Server.", image: "/images/Database.png"}
-    
+    {id: 4, name: "Databases", description:"Familiar with integrating and querying relational databases like SQLite, MySQL, and MS SQL in project-based environments.", image: "/images/Database.png"}
+    ,
+    {id: 5, name: "Other Technologies", description: "Hands-on with REST API integration and exploratory use of Hugging Face for NLP-based prototypes. Emphasis on clean, accessible, and scalable UI design.", image: "/images/Other.png"}
+    ,
+    {id: 6, name: "Previous Exposure", description: "Introductory experience with ASP.NET (MVC) and WPF from academic projects, supporting foundational knowledge of structured programming, UI layout, and component-based design.", image:"/images/Past Exposure.png"}
 ]
 
 const softSkills = [
-    {id: 1, name: "Teamwork-Oriented", description: "With a background in hackathons and collaborative projects, I've seen firsthand how teamwork drives success and achieves meaningful goals. I value diverse perspectives from peers and focus on delivering high-quality results through cooperation and support. My aim is to contribute to a positive impact by helping the team thrive.", image:"/images/Team.png"}
+    {id: 1, name: "Teamwork-Oriented", description: "Experienced in collaborative team settings through hackathons and group projects. I value diverse input and focus on delivering quality results through mutual support and clear goals.", image:"/images/Team.png"}
     ,
-    {id: 2, name: "Active Listening", description: "Staying alert and proactive in discussions is a strength I bring to any team. I make it a priority to fully understand project and team needs before acting, which allows me to contribute effectively to collaboration and decision-making. By staying engaged, I help ensure our collective efforts are well-informed and aligned.", image:"/images/Listening.png"}
+    {id: 2, name: "Active Listening", description: "I prioritize understanding before acting. This helps me align with team expectations, contribute meaningfully to group decisions, and maintain productive communication throughout a project.", image:"/images/Listening.png"}
     ,
-    {id: 3, name: "Willingness to Learn", description: "I'm passionate about learning new tools and technologies to keep my skills sharp and relevant. Curiosity drives me to grow, not just for myself, but to bring fresh ideas and innovation to projects. This commitment supports my ability make a positive impact alongside my teammates.", image: "/images/Learning.png"}
+    {id: 3, name: "Willingness to Learn", description: "Curiosity drives me to stay up to date with tools and frameworks. I'm always eager to grow so I can bring fresh ideas and practical solutions to the table.", image: "/images/Learning.png"}
     ,
-    {id: 4, name: "Effective Communication (English & Spanish)", description: "Clear communication with both technical an non-technical audiences is something I've honed through past projects and brainstorming sessions. Being bilingual in English and Spanish enhances my ability to connect teams and stakeholders, ensuring smooth interactions and shared understanding. It's all about building bridges for better collaboration.", image:"/images/Communication.png"}
+    {id: 4, name: "Effective Communication (English & Spanish)", description: "I'm bilingual and confident communicating with both technical and non-technical audiences. Whether discussing ideas or reporting progress, I aim to foster clear and inclusive collaboration.", image:"/images/Communication.png"}
     ,
-    {id: 5, name: "Creativity", description: "I love bringing creative ideas to mobile and web development, as well as UI design, with focus on improving functionality and user experience. Innovative thinking helps me turn challenges into practical solutions, and I enjoy sharing perspectives that can spark inspiration within the team.", image: "/images/Creative.png"}
+    {id: 5, name: "Creativity", description: "I enjoy designing user-friendly solutions and bringing new ideas into UI design and fron-end projects. Creative thinking helps me enhance usability and functionality.", image: "/images/Creative.png"}
     ,
-    {id: 6, name: "Initiative", description: "I take a proactive approach to sprint requirements and seeking out ways to add value, drawing from my academic and project experiences. Consistency and impact matter to me, and I strive to support the team's goals by stepping up when opportunities arise.", image: "/images/Initiative.png"}
+    {id: 6, name: "Initiative", description: "I take initiative when it's needed — whether clarifying project goals or offering solutions. I aim to add value while staying aligned with team structure and expectations.", image: "/images/Initiative.png"}
 
 ]
 
